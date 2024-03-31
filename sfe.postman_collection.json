@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "30a8735e-f75b-4f86-9b87-c4554bcf7643",
+		"name": "sfe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23287982"
+	},
+	"item": [
+		{
+			"name": "Get records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/records?page=2&scope=18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"records"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "scope",
+							"value": "18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "type",
+							"value": "Semi-detached",
+							"type": "text"
+						},
+						{
+							"key": "kloc",
+							"value": "344",
+							"type": "text"
+						},
+						{
+							"key": "adtAtr",
+							"value": "{ \"something\": [1, 2, 3] }",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3001/records"
+			},
+			"response": []
+		},
+		{
+			"name": "Get record by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/records/48479e93-323d-49a3-a1d6-299a46dc4155"
+			},
+			"response": []
+		}
+	]
+}
