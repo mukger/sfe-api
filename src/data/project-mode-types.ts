@@ -1,0 +1,1 @@
+export enum ProjectModeTypes { ORGANIC = 'Organic', SEMI_DETACHED = 'Semi-detached', EMBEDDED = 'Embedded' } 
