@@ -35,14 +35,11 @@ $ yarn install
 ## Running the app
 
 ```bash
-# development
-$ yarn run start
+To run project you can just do following steps:
 
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+Run PostgreSQL on declared in .env file port (for example using docker https://hub.docker.com/_/postgres).
+Run npm start:dev or yarn start:dev and follow instructions to setting some .env files with important environment variables.
+Now you need to open Postman (https://www.postman.com/) and download sfe.postman_collection file into that you can find in current repository.
 ```
 
 ## Test
